@@ -1,25 +1,46 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Popup from "reactjs-popup";
+import "./assets/stylesheets/App.scss";
+
+import Welcome from "./Welcome";
+import NavBar from "./NavBar";
+import BurgerIcon from "./BurgerIcon";
+import BurgerMenu from "./BurgerMenu";
+
+const styles = {
+  fontFamily: "sans-serif",
+  textAlign: "center",
+  marginTop: "40px"
+};
+const contentStyle = {
+  background: "rgba(255,255,255,0",
+  width: "80%",
+  border: "none"
+};
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <div style={styles}>
+            <Popup
+              modal
+              overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+              contentStyle={contentStyle}
+              closeOnDocumentClick={false}
+              trigger={open => <BurgerIcon open={open} />}
+            >
+              {" "}
+              {close => <BurgerMenu close={close} />}
+            </Popup>
+          </div>
+          <NavBar />
         </header>
+        <Welcome />
+        <footer>
+          <div>NEXT OPENING - MAY 2019</div>
+        </footer>
       </div>
     );
   }

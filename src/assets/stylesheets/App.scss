@@ -1,0 +1,28 @@
+@import "partials/welcome";
+@import "partials/navbar";
+@import "partials/middle";
+@import "partials/burgermenu";
+@import "partials/burgericon";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: light grey;
+  min-height: 20vh;
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
