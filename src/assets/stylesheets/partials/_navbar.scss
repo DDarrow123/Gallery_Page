@@ -1,9 +1,10 @@
 .navbar {
+  //another place for a mixin
   display: flex;
   flex-direction: row;
   align-items: center;
   &__gallery-name {
-    font-size: 2.3vw;
+    font-size: 2vw;
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -23,7 +24,7 @@
       .list-item {
         color: #a9a9a9;
         margin-right: 1em;
-        font-size: 1.7vw;
+        font-size: 1.5vw;
       }
     }
   }

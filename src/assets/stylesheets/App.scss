@@ -3,6 +3,7 @@
 @import "partials/middle";
 @import "partials/burgermenu";
 @import "partials/burgericon";
+@import "partials/middle";
 
 .App {
   text-align: center;
@@ -25,4 +26,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.opening {
+  display: flex;
+  flex-direction: row;
+  margin: 4em 0 2em 3em;
 }
