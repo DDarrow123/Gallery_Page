@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import Popup from "reactjs-popup";
 import BurgerIcon from "./BurgerIcon";
 import BurgerMenu from "./BurgerMenu";
+import {
+  Redirect,
+  Route,
+  BrowserRouter as Router,
+  NavLink,
+  withRouter
+} from "react-router-dom";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -15,6 +22,17 @@ const contentStyle = {
 };
 
 class NavBar extends Component {
+  renderWelcome = () => {
+    if (this.props.rendered !== true) {
+      this.props.history.push("/welcome");
+      console.log("hello!");
+    }
+  };
+
+  renderElements = () => {
+    this.props.toggleRendered();
+    this.renderRedirect();
+  };
   render() {
     return (
       <div className="navbar">
@@ -26,7 +44,13 @@ class NavBar extends Component {
             closeOnDocumentClick={false}
             trigger={open => <BurgerIcon open={open} />}
           >
-            {close => <BurgerMenu close={close} />}
+            {close => (
+              <BurgerMenu
+                close={close}
+                rendered={this.props.rendered}
+                toggleRendered={this.props.toggleRendered}
+              />
+            )}
           </Popup>
         </div>
         <div className="navbar__gallery-name">GALLERY.NYC</div>

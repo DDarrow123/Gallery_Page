@@ -3,8 +3,8 @@ import React, { Component } from "react";
 class Collection extends Component {
   render() {
     return (
-      <div>
-        <div>Hello</div>
+      <div className="background">
+        <h1>Hello, world!</h1>
       </div>
     );
   }
