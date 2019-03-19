@@ -11,36 +11,22 @@ import Welcome from "./Welcome";
 import MiddleSection from "./MiddleSection";
 import NavBar from "./NavBar";
 import Collection from "./Collection";
+import Locations from "./Locations";
 
 class App extends Component {
-  state = {
-    rendered: false
-  };
-
-  toggleRendered = () => {
-    this.setState({
-      rendered: !this.state.rendered
-    });
-  };
   render() {
     return (
       <Router>
         <div className="App">
           <header className="App-header">
-            <NavBar
-              rendered={this.state.rendered}
-              toggleRendered={this.toggleRendered}
-            />
+            <NavBar />
           </header>
-          <Welcome
-            rendered={this.state.rendered}
-            toggleRendered={this.toggleRendered}
-          />
-
           <div>
             <Switch>
-              <Route path="/welcome" component={Welcome} />
+              <Route exact path="/" component={Welcome} />
+              <Route path="/collection" component={Collection} />
               <Route path="/middle" component={MiddleSection} />
+              <Route path="/locations" component={Locations} />
             </Switch>
           </div>
         </div>

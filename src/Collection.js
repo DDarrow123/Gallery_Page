@@ -1,4 +1,11 @@
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  withRouter,
+  Switch,
+  Redirect
+} from "react-router-dom";
 
 class Collection extends Component {
   render() {
@@ -10,4 +17,4 @@ class Collection extends Component {
   }
 }
 
-export default Collection;
+export default withRouter(Collection);

@@ -22,17 +22,6 @@ const contentStyle = {
 };
 
 class NavBar extends Component {
-  renderWelcome = () => {
-    if (this.props.rendered !== true) {
-      this.props.history.push("/welcome");
-      console.log("hello!");
-    }
-  };
-
-  renderElements = () => {
-    this.props.toggleRendered();
-    this.renderRedirect();
-  };
   render() {
     return (
       <div className="navbar">
@@ -44,13 +33,7 @@ class NavBar extends Component {
             closeOnDocumentClick={false}
             trigger={open => <BurgerIcon open={open} />}
           >
-            {close => (
-              <BurgerMenu
-                close={close}
-                rendered={this.props.rendered}
-                toggleRendered={this.props.toggleRendered}
-              />
-            )}
+            {close => <BurgerMenu close={close} />}
           </Popup>
         </div>
         <div className="navbar__gallery-name">GALLERY.NYC</div>

@@ -15,17 +15,25 @@ const BurgerMenu = ({ close, ...props }) => {
     console.log("hello!");
   };
 
-  const renderElements = ({ close }) => {
-    // props.onClose();
-    props.toggleRendered();
+  const renderLocation = () => {
+    props.history.push("/locations");
+  };
+
+  const renderElements = () => {
     renderWelcome();
+    close();
+  };
+
+  const renderLocationElements = () => {
+    renderLocation();
+    close();
   };
 
   return (
     <div className="menu">
       <ul>
         <li onClick={renderElements}>Home</li>
-        <li onClick={close}>Locations</li>
+        <li onClick={renderLocationElements}>Locations</li>
       </ul>
     </div>
   );
