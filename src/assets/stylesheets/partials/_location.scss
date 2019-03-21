@@ -1,0 +1,37 @@
+.location-container {
+  display: flex;
+  flex-direction: row;
+
+  &__hours {
+    justify-content: flex-end;
+    margin-left: 35vw;
+    font-weight: 400;
+  }
+  &__address {
+    margin-right: 1em;
+    width: 30vw;
+    h3 {
+      font-weight: 200;
+    }
+  }
+  &__container-img {
+    img {
+      width: 5vw;
+      margin: 1em 0 0 4em;
+    }
+  }
+}
+
+.example-enter {
+  height: 0px;
+}
+
+.example-enter.example-enter-active {
+  height: 100px;
+  -webkit-transition: height 0.3s ease;
+}
+
+.example-leave.example-leave-active {
+  height: 0px;
+  -webkit-transition: height 0.3s ease;
+}

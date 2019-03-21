@@ -33,10 +33,10 @@ class MiddleSection extends Component {
             <h5 className="middle-description__heading">ARTIST</h5>
             <h5 className="middle-description__subheading">ANDREW HOLMQUIST</h5>
           </div>
-          <footer>
-            <div className="opening">NEXT OPENING - MAY 2019</div>
-          </footer>
         </div>
+        <footer>
+          <div className="opening">NEXT OPENING - MAY 2019</div>
+        </footer>
       </>
     );
   }
