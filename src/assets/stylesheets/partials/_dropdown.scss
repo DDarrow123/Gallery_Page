@@ -21,9 +21,18 @@
     .hour-list {
       list-style-type: none;
       width: 22vw;
-      text-align: left;
-      span {
-        margin-left: 4vw;
+      .hour-item {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        .weekday {
+          width: 10vw;
+          font-weight: 300;
+        }
+        .status {
+          margin-left: 1em;
+          font-weight: 300;
+        }
       }
     }
   }

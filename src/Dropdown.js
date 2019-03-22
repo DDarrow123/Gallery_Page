@@ -35,27 +35,34 @@ class Dropdown extends Component {
             <img className="clock_icon" src={clock_icon} />
           </div>
           <ul className="hour-list">
-            <li>
-              Sunday <span>CLOSED</span>
-            </li>
-            <li>
-              Monday <span>CLOSED</span>
-            </li>
-            <li>
-              Tuesday <span>10 AM-6 PM</span>
-            </li>
-            <li>
-              Wednesday <span>10 AM-6 PM</span>
-            </li>
-            <li>
-              Thursday <span>10 AM-6 PM</span>
-            </li>
-            <li>
-              Friday <span>10 AM-6 PM</span>
-            </li>
-            <li>
-              Saturday <span>10 AM-6 PM</span>
-            </li>
+            <div className="hour-item">
+              <div className="weekday">Sunday</div>{" "}
+              <div className="status">CLOSED</div>
+            </div>
+            <div className="hour-item">
+              <div className="weekday">Monday</div>{" "}
+              <div className="status">CLOSED</div>
+            </div>
+            <div className="hour-item">
+              <div className="weekday">Tuesday</div>{" "}
+              <div className="status">10 AM-6 PM</div>
+            </div>
+            <div className="hour-item">
+              <div className="weekday">Wednesday</div>{" "}
+              <div className="status">10 AM-6 PM</div>
+            </div>
+            <div className="hour-item">
+              <div className="weekday">Thursday</div>{" "}
+              <div className="status">10 AM-6 PM</div>
+            </div>
+            <div className="hour-item">
+              <div className="weekday">Friday</div>{" "}
+              <div className="status">10 AM-6 PM</div>
+            </div>
+            <div className="hour-item">
+              <div className="weekday">Saturday</div>{" "}
+              <div className="status">10 AM-6 PM</div>
+            </div>
           </ul>
         </div>
         <hr />
