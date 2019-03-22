@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import plus_arrow_icon from "./assets/images/plus_arrow_icon.svg";
 import Dropdown from "./Dropdown";
-import {
-  CSSTransition,
-  TransitionGroup,
-  CSSTransitionGroup
-} from "react-transition-group";
+import { TransitionGroup } from "react-transition-group";
+import { VelocityComponent, VelocityTransitionGroup } from "velocity-react";
 
 class Locations extends Component {
   state = {
@@ -28,10 +25,6 @@ class Locations extends Component {
               onClick={this.detailDropdown}
               src={plus_arrow_icon}
             />
-            {this.state.visible ? "Slide up" : "Slide down"}
-            <CSSTransitionGroup transitionName="example">
-              {this.state.visible ? <Dropdown /> : null}
-            </CSSTransitionGroup>
           </div>
           <div className="location-container__address">
             <h1> New York</h1>
@@ -41,6 +34,12 @@ class Locations extends Component {
           <div>
             <h4 className="location-container__hours">Open 10am-6pm</h4>
             <hr />
+            <VelocityTransitionGroup
+              enter={{ animation: "slideDown" }}
+              leave={{ animation: "slideUp" }}
+            >
+              {this.state.visible ? <Dropdown /> : null}
+            </VelocityTransitionGroup>
           </div>
         </div>
         <div className="location-container">
