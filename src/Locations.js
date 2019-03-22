@@ -36,6 +36,7 @@ class Locations extends Component {
             <hr />
             <VelocityTransitionGroup
               enter={{ animation: "slideDown" }}
+              duration={500}
               leave={{ animation: "slideUp" }}
             >
               {this.state.visible ? <Dropdown /> : null}

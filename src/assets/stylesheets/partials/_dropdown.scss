@@ -1,3 +1,57 @@
 .panel {
-  width: 30vw;
+  //mixin here for flexbox
+  width: 45vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  hr {
+    border-top: 1px solid red;
+  }
+
+  &__hours-container {
+    //mixin here for flexbox
+    display: flex;
+    flex-direction: row;
+    .hour-title {
+      font-weight: 300;
+      .clock_icon {
+        width: 80px;
+      }
+    }
+    .hour-list {
+      list-style-type: none;
+      width: 22vw;
+      text-align: left;
+      span {
+        margin-left: 4vw;
+      }
+    }
+  }
+  &__contact-container {
+    //mixin here for flexbox
+    display: flex;
+    flex-direction: row;
+    hr {
+      margin: 12vh 0 0 5vw;
+    }
+    .contact-title {
+      .phone_icon {
+        margin: 4.5em 4em 0 0;
+        width: 55px;
+      }
+      h5 {
+        font-weight: 300;
+      }
+    }
+    .mail {
+      .mail_icon {
+        margin: 4.7em 0 0 4.5em;
+        width: 50px;
+      }
+      h5 {
+        font-weight: 300;
+        margin: 3.3em 0 0 4.5em;
+      }
+    }
+  }
 }
