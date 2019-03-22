@@ -7,6 +7,9 @@
     margin-left: 35vw;
     font-weight: 400;
   }
+  &__hr {
+    border-top: 1.5px solid grey;
+  }
   &__address {
     margin-right: 1em;
     width: 30vw;
@@ -18,20 +21,13 @@
     img {
       width: 5vw;
       margin: 1em 0 0 4em;
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      // &.transform-btn {
+      //   transform: translate(-50%, -50%);
+      // }
     }
   }
 }
-
-// .example-enter {
-//   height: 0px;
-// }
-//
-// .example-enter.example-enter-active {
-//   height: 100px;
-//   -webkit-transition: height 0.3s ease;
-// }
-//
-// .example-leave.example-leave-active {
-//   height: 0px;
-//   -webkit-transition: height 0.3s ease;
-// }

@@ -7,6 +7,7 @@
 @import "partials/collection";
 @import "partials/location";
 @import "partials/dropdown";
+@import "partials/social";
 
 .App {
   text-align: center;
@@ -20,10 +21,6 @@
 .App-header {
   background-color: light grey;
   min-height: 20vh;
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: center;
   font-size: calc(10px + 2vmin);
 }
 

@@ -1,11 +1,14 @@
 .panel {
   //mixin here for flexbox
   width: 45vw;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   flex-direction: row;
-  hr {
-    border-top: 1px solid red;
+  &__hr {
+    border-top: 1.5px solid red;
+  }
+  .dropdown-img {
+    height: 60vh;
   }
 
   &__hours-container {
@@ -40,8 +43,9 @@
     //mixin here for flexbox
     display: flex;
     flex-direction: row;
-    hr {
+    .hr-divider {
       margin: 12vh 0 0 5vw;
+      border-top: 1px solid grey;
     }
     .contact-title {
       .phone_icon {

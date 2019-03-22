@@ -1,17 +1,41 @@
 import React, { Component } from "react";
-import plus_arrow_icon from "./assets/images/plus_arrow_icon.svg";
-import Dropdown from "./Dropdown";
 import { TransitionGroup } from "react-transition-group";
 import { VelocityComponent, VelocityTransitionGroup } from "velocity-react";
+import plus_arrow_icon from "./assets/images/plus_arrow_icon.svg";
+import NyDropdown from "./NyDropdown";
+import LnDropdown from "./LnDropdown";
+import PrDropdown from "./PrDropdown";
+import Social from "./Social";
 
 class Locations extends Component {
   state = {
-    visible: false
+    nyVisible: false,
+    lnVisible: false,
+    prVisible: false
   };
 
-  detailDropdown = () => {
+  //not sure if one function works here...
+  // detailDropdown = e => {
+  //   this.setState({
+  //     [e.target.name]: !e.target.name
+  //   });
+  // };
+
+  nyDetailDropdown = () => {
     this.setState({
-      visible: !this.state.visible
+      nyVisible: !this.state.nyVisible
+    });
+  };
+
+  lnDetailDropdown = () => {
+    this.setState({
+      lnVisible: !this.state.lnVisible
+    });
+  };
+
+  prDetailDropdown = () => {
+    this.setState({
+      prVisible: !this.state.prVisible
     });
   };
 
@@ -20,12 +44,27 @@ class Locations extends Component {
       <div>
         <div className="location-container">
           <div className="location-container__container-img">
-            <img
-              className="location-container__image"
-              onClick={this.detailDropdown}
-              src={plus_arrow_icon}
-            />
+            <VelocityComponent
+              animation={{
+                rotateX: this.state.nyVisible ? 200 : 0
+              }}
+              duration={500}
+            >
+              <img
+                className="location-container__image"
+                onClick={this.nyDetailDropdown}
+                src={plus_arrow_icon}
+              />
+            </VelocityComponent>
+
+            <VelocityTransitionGroup
+              enter={{ animation: "slideDown" }}
+              leave={{ animation: "slideUp" }}
+            >
+              {this.state.nyVisible ? <Social /> : null}
+            </VelocityTransitionGroup>
           </div>
+
           <div className="location-container__address">
             <h1> New York</h1>
             <h3 className="detail">34 East 69th Street</h3>
@@ -33,19 +72,29 @@ class Locations extends Component {
           </div>
           <div>
             <h4 className="location-container__hours">Open 10am-6pm</h4>
-            <hr />
+            <hr className="location-container__hr" />
             <VelocityTransitionGroup
               enter={{ animation: "slideDown" }}
-              duration={500}
               leave={{ animation: "slideUp" }}
             >
-              {this.state.visible ? <Dropdown /> : null}
+              {this.state.nyVisible ? <NyDropdown /> : null}
             </VelocityTransitionGroup>
           </div>
         </div>
         <div className="location-container">
           <div className="location-container__container-img">
-            <img className="location-container__image" src={plus_arrow_icon} />
+            <VelocityComponent
+              animation={{
+                rotateX: this.state.lnVisible ? 200 : 0
+              }}
+              duration={500}
+            >
+              <img
+                className="location-container__image"
+                src={plus_arrow_icon}
+                onClick={this.lnDetailDropdown}
+              />
+            </VelocityComponent>
           </div>
           <div className="location-container__address">
             <h1>London</h1>
@@ -54,21 +103,44 @@ class Locations extends Component {
           </div>
           <div>
             <h4 className="location-container__hours">Open 10am-6pm</h4>
-            <hr />
+            <hr className="location-container__hr" />
+            <VelocityTransitionGroup
+              enter={{ animation: "slideDown" }}
+              leave={{ animation: "slideUp" }}
+            >
+              {this.state.lnVisible ? <LnDropdown /> : null}
+            </VelocityTransitionGroup>
           </div>
         </div>
         <div className="location-container">
           <div className="location-container__container-img">
-            <img className="location-container__image" src={plus_arrow_icon} />
+            <VelocityComponent
+              animation={{
+                rotateX: this.state.prVisible ? 200 : 0
+              }}
+              duration={500}
+            >
+              <img
+                className="location-container__image"
+                src={plus_arrow_icon}
+                onClick={this.prDetailDropdown}
+              />
+            </VelocityComponent>
           </div>
           <div className="location-container__address">
             <h1>Paris</h1>
-            <h3>261, Boulevard Raspail</h3>
+            <h3>261 Boulevard Raspail</h3>
             <h3>Paris</h3>
           </div>
           <div>
             <h4 className="location-container__hours">Open 10am-6pm</h4>
-            <hr />
+            <hr className="location-container__hr" />
+            <VelocityTransitionGroup
+              enter={{ animation: "slideDown" }}
+              leave={{ animation: "slideUp" }}
+            >
+              {this.state.prVisible ? <PrDropdown /> : null}
+            </VelocityTransitionGroup>
           </div>
         </div>
       </div>
