@@ -2,29 +2,42 @@
   display: none;
   flex-direction: column;
   margin-left: 12vh;
+  a {
+    &:hover {
+      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
+    }
+  }
   &__twitter-handle {
-    width: 3vw;
+    width: 2.3vw;
     &:hover {
       //could use mixin here
-      opacity: 0.5;
+
+      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
+      // padding: 10px;
       cursor: pointer;
     }
   }
   &__fb-handle {
-    width: 3vw;
+    width: 2.5vw;
     margin-top: 1em;
     &:hover {
+      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
       //could use mixin here
-      opacity: 0.5;
+      // background: rgb(252, 13, 27);
+      // border-radius: 3px;
+      // padding: 10px;
       cursor: pointer;
     }
   }
   &__instagram-handle {
-    width: 4vw;
-    margin-top: 0.3em;
+    width: 3vw;
+    margin-top: 1em;
     &:hover {
+      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
       //could use mixin here
-      opacity: 0.5;
+      // background: rgb(252, 13, 27);
+      // border-radius: 3px;
+      // padding: 5px 8px 5px 8px;
       cursor: pointer;
     }
   }

@@ -9,14 +9,23 @@
       position: absolute;
       left: 5%;
       top: 50%;
+      font-weight: 600;
+      span {
+        font-style: italic;
+        font-weight: 500;
+      }
     }
     &__link {
       margin: 10em 0 0 1em;
-      img {
+      .arrow-color {
         width: 40px;
         top: 33em;
         left: 12em;
         position: absolute;
+        &:hover {
+          filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
+          opacity: 0.5;
+        }
       }
     }
   }

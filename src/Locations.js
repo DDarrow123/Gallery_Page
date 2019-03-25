@@ -95,6 +95,12 @@ class Locations extends Component {
                 onClick={this.lnDetailDropdown}
               />
             </VelocityComponent>
+            <VelocityTransitionGroup
+              enter={{ animation: "slideDown" }}
+              leave={{ animation: "slideUp" }}
+            >
+              {this.state.lnVisible ? <Social /> : null}
+            </VelocityTransitionGroup>
           </div>
           <div className="location-container__address">
             <h1>London</h1>
@@ -126,6 +132,12 @@ class Locations extends Component {
                 onClick={this.prDetailDropdown}
               />
             </VelocityComponent>
+            <VelocityTransitionGroup
+              enter={{ animation: "slideDown" }}
+              leave={{ animation: "slideUp" }}
+            >
+              {this.state.prVisible ? <Social /> : null}
+            </VelocityTransitionGroup>
           </div>
           <div className="location-container__address">
             <h1>Paris</h1>

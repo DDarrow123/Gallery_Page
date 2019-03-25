@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
 .navbar {
   //another place for a mixin
   display: flex;
   flex-direction: row;
   align-items: center;
   &__gallery-name {
+    font-family: "Roboto", sans-serif;
     font-size: 2vw;
     width: 50%;
     display: flex;

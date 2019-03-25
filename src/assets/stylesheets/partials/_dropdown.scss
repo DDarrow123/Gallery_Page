@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
 .panel {
   //mixin here for flexbox
   width: 45vw;
@@ -16,6 +19,7 @@
     display: flex;
     flex-direction: row;
     .hour-title {
+      font-family: "Overpass", sans-serif;
       font-weight: 300;
       .clock_icon {
         width: 80px;
@@ -23,17 +27,21 @@
     }
     .hour-list {
       list-style-type: none;
-      width: 22vw;
+      width: 25vw;
+      margin-left: 1em;
       .hour-item {
-        text-align: left;
+        font-family: "Roboto", sans-serif;
         display: flex;
         flex-direction: row;
         .weekday {
-          width: 10vw;
+          font-family: "Roboto", sans-serif;
+          margin-left: 1vw;
+          text-align: left;
+          width: 12vw;
           font-weight: 300;
         }
         .status {
-          margin-left: 1em;
+          margin-left: 3vw;
           font-weight: 300;
         }
       }
@@ -41,6 +49,7 @@
   }
   &__contact-container {
     //mixin here for flexbox
+    font-family: "Overpass", sans-serif;
     display: flex;
     flex-direction: row;
     .hr-divider {
