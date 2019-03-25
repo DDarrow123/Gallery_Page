@@ -61,7 +61,7 @@ class PrDropdown extends Component {
             <img className="phone_icon" src={phone_icon} />
             <h5>+33 01-00-00-00-00</h5>
           </div>
-          <hr />
+          <hr className="hr-divider" />
           <div className="mail">
             <img className="mail_icon" src={mail_icon} />
             <h5>paris@gallerypr.com</h5>

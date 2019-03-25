@@ -60,7 +60,7 @@ class LnDropdown extends Component {
             <img className="phone_icon" src={phone_icon} />
             <h5>+44 000-000-0000</h5>
           </div>
-          <hr />
+          <hr className="hr-divider" />
           <div className="mail">
             <img className="mail_icon" src={mail_icon} />
             <h5>london@galleryln.com</h5>

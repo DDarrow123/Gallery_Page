@@ -5,7 +5,13 @@ import { VelocityTransitionGroup } from "velocity-animate";
 
 class SocialMediaIcons extends Component {
   render() {
-    return <div className="" />;
+    return (
+      <div className="">
+        <img src={null} alt="icon" />
+        <img src={null} alt="icon" />
+        <img src={null} alt="icon" />
+      </div>
+    );
   }
 }
 
