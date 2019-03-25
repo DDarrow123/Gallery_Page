@@ -2,43 +2,34 @@
   display: none;
   flex-direction: column;
   margin-left: 12vh;
-  a {
-    &:hover {
-      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
+  &__social-link {
+    .twitter-handle {
+      width: 2.3vw;
+      &:hover {
+        //could use mixin here
+        filter: invert(12%) sepia(82%) saturate(5499%) hue-rotate(351deg)
+          brightness(111%) contrast(102%);
+      }
     }
   }
-  &__twitter-handle {
-    width: 2.3vw;
-    &:hover {
-      //could use mixin here
-
-      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
-      // padding: 10px;
-      cursor: pointer;
+  &__social-link {
+    .fb-handle {
+      width: 2.5vw;
+      margin-top: 1em;
+      &:hover {
+        filter: invert(12%) sepia(82%) saturate(5499%) hue-rotate(351deg)
+          brightness(111%) contrast(102%);
+      }
     }
   }
-  &__fb-handle {
-    width: 2.5vw;
-    margin-top: 1em;
-    &:hover {
-      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
-      //could use mixin here
-      // background: rgb(252, 13, 27);
-      // border-radius: 3px;
-      // padding: 10px;
-      cursor: pointer;
-    }
-  }
-  &__instagram-handle {
-    width: 3vw;
-    margin-top: 1em;
-    &:hover {
-      filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
-      //could use mixin here
-      // background: rgb(252, 13, 27);
-      // border-radius: 3px;
-      // padding: 5px 8px 5px 8px;
-      cursor: pointer;
+  &__social-link {
+    .instagram-handle {
+      width: 3vw;
+      margin-top: 1em;
+      &:hover {
+        filter: invert(12%) sepia(82%) saturate(5499%) hue-rotate(351deg)
+          brightness(111%) contrast(102%);
+      }
     }
   }
 }

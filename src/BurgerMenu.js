@@ -19,6 +19,10 @@ const BurgerMenu = ({ close, ...props }) => {
     props.history.push("/locations");
   };
 
+  const renderCollection = () => {
+    props.history.push("/collection");
+  };
+
   const renderElements = () => {
     renderWelcome();
     close();
@@ -29,11 +33,17 @@ const BurgerMenu = ({ close, ...props }) => {
     close();
   };
 
+  const renderCollectionElements = () => {
+    renderCollection();
+    close();
+  };
+
   return (
     <div className="menu">
       <ul>
         <li onClick={renderElements}>Home</li>
         <li onClick={renderLocationElements}>Locations</li>
+        <li onClick={renderCollectionElements}>Collection</li>
       </ul>
     </div>
   );

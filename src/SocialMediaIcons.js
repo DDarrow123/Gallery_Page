@@ -9,27 +9,19 @@ class SocialMediaIcons extends Component {
     return (
       <div className="social-icon-list">
         <div>
-          <a href="#">
-            <img
-              className="social-icon-list__twitter-handle"
-              src={twitter_icon}
-              alt="icon"
-            />
+          <a className="social-icon-list__social-link" href="#">
+            <img className="twitter-handle" src={twitter_icon} alt="icon" />
           </a>
         </div>
         <div>
-          <a href="#">
-            <img
-              className="social-icon-list__fb-handle"
-              src={facebook_icon}
-              alt="icon"
-            />
+          <a className="social-icon-list__social-link" href="#">
+            <img className="fb-handle" src={facebook_icon} alt="icon" />
           </a>
         </div>
         <div>
-          <a href="#">
+          <a className="social-icon-list__social-link" href="#">
             <img
-              className="social-icon-list__instagram-handle"
+              className="instagram-handle"
               src={insta_icon}
               alt="Instagram Icon"
             />
