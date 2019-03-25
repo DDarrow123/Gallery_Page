@@ -1,0 +1,10 @@
+.social-btn-container {
+  &__social-img {
+    width: 4.8vw;
+    margin: 1em 0 0 4em;
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}

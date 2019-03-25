@@ -51,7 +51,7 @@ class Locations extends Component {
               duration={500}
             >
               <img
-                className="location-container__image"
+                className="plus-image"
                 onClick={this.nyDetailDropdown}
                 src={plus_arrow_icon}
               />
@@ -90,7 +90,7 @@ class Locations extends Component {
               duration={500}
             >
               <img
-                className="location-container__image"
+                className="plus-image"
                 src={plus_arrow_icon}
                 onClick={this.lnDetailDropdown}
               />
@@ -121,7 +121,7 @@ class Locations extends Component {
               duration={500}
             >
               <img
-                className="location-container__image"
+                className="plus-image"
                 src={plus_arrow_icon}
                 onClick={this.prDetailDropdown}
               />

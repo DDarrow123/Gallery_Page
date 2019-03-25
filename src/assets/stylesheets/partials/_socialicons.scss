@@ -1,0 +1,31 @@
+.social-icon-list {
+  display: none;
+  flex-direction: column;
+  margin-left: 12vh;
+  &__twitter-handle {
+    width: 3vw;
+    &:hover {
+      //could use mixin here
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__fb-handle {
+    width: 3vw;
+    margin-top: 1em;
+    &:hover {
+      //could use mixin here
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  &__instagram-handle {
+    width: 4vw;
+    margin-top: 0.3em;
+    &:hover {
+      //could use mixin here
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+}
