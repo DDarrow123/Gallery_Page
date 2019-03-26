@@ -15,6 +15,7 @@ class Collection extends Component {
   render() {
     return (
       <div className="work-container">
+        <h1>ANDREW HOLMQUIST</h1>
         <div className="work-container__image-container">
           <div className="work-description">
             <hr className="work-divider" />
