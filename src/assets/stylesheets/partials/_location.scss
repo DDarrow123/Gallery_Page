@@ -14,6 +14,7 @@
 
   &__hours {
     font-family: "Roboto", sans-serif;
+    font-size: 2vw;
     justify-content: flex-end;
     margin-left: 35vw;
     font-weight: 400;
@@ -23,11 +24,12 @@
   }
   &__address {
     font-family: "Roboto", sans-serif;
-
+    font-size: 3vw;
     margin-right: 1em;
     width: 30vw;
     h3 {
       font-family: "Overpass", sans-serif;
+      font-size: 2vw;
       font-weight: 300;
     }
   }

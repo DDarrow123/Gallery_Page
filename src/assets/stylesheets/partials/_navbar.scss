@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Overpass:300");
 
 .navbar {
   //another place for a mixin
@@ -6,7 +7,7 @@
   flex-direction: row;
   align-items: center;
   &__gallery-name {
-    font-family: "Roboto", sans-serif;
+    font-family: "Overpass", sans-serif;
     font-size: 2vw;
     width: 50%;
     display: flex;
@@ -16,6 +17,7 @@
     color: #a9a9a9;
   }
   &__gallery-media {
+    font-family: "Overpass", sans-serif;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -28,6 +30,10 @@
         color: #a9a9a9;
         margin-right: 1em;
         font-size: 1.5vw;
+        &:hover {
+          filter: invert(12%) sepia(82%) saturate(5499%) hue-rotate(351deg)
+            brightness(111%) contrast(102%);
+        }
       }
     }
   }

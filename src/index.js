@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./assets/stylesheets/index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+require("velocity-animate/velocity.ui");
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
