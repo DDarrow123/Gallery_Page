@@ -6,6 +6,7 @@ import next_arrow from "./assets/images/next_arrow.svg";
 class MiddleSection extends Component {
   renderCollection = () => {
     this.props.history.push("/collection");
+    window.scroll({ top: 10, left: 0, behavior: "smooth" });
     console.log("hello!");
   };
 
