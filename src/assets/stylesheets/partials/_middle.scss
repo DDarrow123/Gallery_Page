@@ -21,12 +21,13 @@
       }
     }
     &__link {
-      margin: 12em 0 0 1em;
+      margin: 18em 0 0 1em;
       font-family: "Overpass", sans-serif;
+      font-size: 2vw;
       .arrow-color {
         width: 6vw;
-        top: 34em;
-        left: 12em;
+        top: 30em;
+        left: 10em;
         position: absolute;
         &:hover {
           filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
@@ -48,16 +49,16 @@
     &__heading {
       font-family: "Roboto", sans-serif;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 1.5vw;
     }
     &__subheading {
       font-family: "Overpass", sans-serif;
       font-weight: 300;
-      font-size: 18px;
+      font-size: 2vw;
     }
   }
 }
 .opening {
   font-family: "Overpass", sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
 }
