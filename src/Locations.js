@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TransitionGroup } from "react-transition-group";
+// import { TransitionGroup } from "react-transition-group";
 import { VelocityComponent, VelocityTransitionGroup } from "velocity-react";
 import plus_arrow_icon from "./assets/images/plus_arrow_icon.svg";
 import NyDropdown from "./NyDropdown";

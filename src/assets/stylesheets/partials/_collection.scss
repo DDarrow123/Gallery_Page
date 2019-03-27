@@ -7,9 +7,12 @@
   h1 {
     color: rgba(223, 223, 223, 0.8);
     font-size: 5vw;
+    &:hover {
+    }
   }
   &__image-container {
-    background-color: rgba(223, 223, 223, 0.5);
+    // background-color: rgba(223, 223, 223, 0.3);
+    width: 100vw;
     margin: 1em 0 1em 0;
     padding: 10px 0 10px 0;
     .work-description {
@@ -18,7 +21,7 @@
       top: 16em;
       color: white;
       font-size: 40px;
-      width: 37%;
+      width: 37.5%;
       height: 5em;
     }
     .work-divider {
@@ -46,7 +49,7 @@
       h5 {
         width: 50%;
         font-size: 2vw;
-        margin-left: 0.5em;
+        // margin-left: 0.7em;
         span {
           font-size: 1.5vw;
         }
@@ -58,8 +61,8 @@
     }
     //general image styling//
     img {
-      width: 52vw;
-      height: 100vh;
+      width: 40vw;
+      height: 90vh;
       margin: 1em 0 1em 0;
     }
     .heaven_img {
@@ -70,7 +73,7 @@
     .work-description-2 {
       position: absolute;
       left: 10em;
-      top: 33.5em;
+      top: 32.3em;
       color: white;
       font-size: 40px;
       width: 37%;
@@ -83,8 +86,8 @@
     //image 3//
     .work-description-3 {
       position: absolute;
-      left: 5.5em;
-      top: 52em;
+      left: 5.7em;
+      top: 50em;
       color: white;
       font-size: 40px;
       width: 58%;
@@ -131,11 +134,11 @@
     //image 4//
     .work-description-4 {
       position: absolute;
-      left: 9.5em;
-      top: 69em;
+      left: 9.9em;
+      top: 66em;
       color: white;
       font-size: 40px;
-      width: 40%;
+      width: 38%;
       height: 5em;
     }
     .work-divider-4 {

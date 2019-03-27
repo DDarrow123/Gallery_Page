@@ -6,20 +6,6 @@ import mail_icon from "./assets/images/mail_icon.svg";
 import ny_gallery from "./assets/images/ny_gallery.jpg";
 
 class NyDropdown extends Component {
-  // componentWillEnter = cb => {
-  //   const element = this.container.getDOMNode();
-  //   Velocity(element, "slideDown", { duration: 300 }).then(cb);
-  // };
-
-  // componentWillLeave = cb => {
-  //   const element = this.container.getDOMNode();
-  //   Velocity(element, "slideDown", { duration: 300 }).then(cb);
-  // };
-
-  // setContainer = c => {
-  //   this.container = c;
-  // };
-
   render() {
     return (
       <div className="panel">

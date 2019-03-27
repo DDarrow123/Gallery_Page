@@ -6,17 +6,49 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-import andrew_1 from "./assets/images/andrew_1.jpg";
-import andrew_2 from "./assets/images/andrew_2.jpg";
-import andrew_3 from "./assets/images/andrew_3.jpg";
-import andrew_4 from "./assets/images/andrew_4.jpg";
+import {
+  VelocityComponent,
+  VelocityTransitionGroup,
+  Velocity
+} from "velocity-react";
+import andrew_1 from "./assets/images/andrew_1.png";
+import andrew_2 from "./assets/images/andrew_2.png";
+import andrew_3 from "./assets/images/andrew_3.png";
+import andrew_4 from "./assets/images/andrew_4.png";
 
 class Collection extends Component {
+  state = {
+    visible: false
+  };
+
+  componentDidMount() {
+    this.toggleVisibility();
+  }
+
+  toggleVisibility = () => {
+    this.setState({
+      visible: !this.state.visible
+    });
+  };
+
+  // getAnimation = () => {
+  //   "transition.slideDownIn";
+  // };
+
   render() {
     return (
       <div className="work-container">
         <h1>ANDREW HOLMQUIST</h1>
         <div className="work-container__image-container">
+          <VelocityTransitionGroup
+            enter={{
+              animation: "transition.slideDownBigIn"
+            }}
+          >
+            {this.state.visible ? (
+              <img src={andrew_1} alt="Andrew Work - Aphotic Zone Image" />
+            ) : null}
+          </VelocityTransitionGroup>
           <div className="work-description">
             <hr className="work-divider" />
             <div className="filler">
@@ -26,9 +58,15 @@ class Collection extends Component {
               </h5>
             </div>
           </div>
-          <img src={andrew_1} alt="Andrew Work - Aphotic Zone Image" />
         </div>
         <div className="work-container__image-container">
+          <VelocityTransitionGroup
+            enter={{ animation: "transition.slideDownBigIn" }}
+          >
+            {this.state.visible ? (
+              <img src={andrew_2} alt="Andrew Work - Succulence Image" />
+            ) : null}
+          </VelocityTransitionGroup>
           <div className="work-description-2">
             <hr className="work-divider-2" />
             <div className="filler">
@@ -38,9 +76,19 @@ class Collection extends Component {
               </h5>
             </div>
           </div>
-          <img src={andrew_2} alt="Andrew Work - Succulence Image" />
         </div>
         <div className="work-container__image-container">
+          <VelocityTransitionGroup
+            enter={{ animation: "transition.slideDownBigIn" }}
+          >
+            {this.state.visible ? (
+              <img
+                className="heaven_img"
+                src={andrew_3}
+                alt="Andrew Work - Heaven Image"
+              />
+            ) : null}
+          </VelocityTransitionGroup>
           <div className="work-description-3">
             <hr className="work-divider-3" />
             <div className="filler-3">
@@ -51,13 +99,15 @@ class Collection extends Component {
               </h5>
             </div>
           </div>
-          <img
-            className="heaven_img"
-            src={andrew_3}
-            alt="Andrew Work - Heaven Image"
-          />
         </div>
         <div className="work-container__image-container">
+          <VelocityTransitionGroup
+            enter={{ animation: "transition.slideDownBigIn" }}
+          >
+            {this.state.visible ? (
+              <img src={andrew_4} alt="Andrew Work - Deep End Image" />
+            ) : null}
+          </VelocityTransitionGroup>
           <div className="work-description-4">
             <hr className="work-divider-4" />
             <div className="filler">
@@ -68,7 +118,6 @@ class Collection extends Component {
               </h5>
             </div>
           </div>
-          <img src={andrew_4} alt="Andrew Work - Deep End Image" />
         </div>
       </div>
     );
