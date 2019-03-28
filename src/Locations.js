@@ -58,7 +58,7 @@ class Locations extends Component {
             </VelocityComponent>
 
             <VelocityTransitionGroup
-              enter={{ animation: "slideDown" }}
+              enter={{ animation: "transition.slideDownBigIn" }}
               leave={{ animation: "slideUp" }}
             >
               {this.state.nyVisible ? <Social /> : null}
@@ -74,7 +74,7 @@ class Locations extends Component {
             <h4 className="location-container__hours">Open 10am-6pm</h4>
             <hr className="location-container__hr" />
             <VelocityTransitionGroup
-              enter={{ animation: "slideDown" }}
+              enter={{ animation: "transition.slideDownIn" }}
               leave={{ animation: "slideUp" }}
             >
               {this.state.nyVisible ? <NyDropdown /> : null}
@@ -96,7 +96,7 @@ class Locations extends Component {
               />
             </VelocityComponent>
             <VelocityTransitionGroup
-              enter={{ animation: "slideDown" }}
+              enter={{ animation: "transition.slideDownBigIn" }}
               leave={{ animation: "slideUp" }}
             >
               {this.state.lnVisible ? <Social /> : null}
@@ -111,7 +111,7 @@ class Locations extends Component {
             <h4 className="location-container__hours">Open 10am-6pm</h4>
             <hr className="location-container__hr" />
             <VelocityTransitionGroup
-              enter={{ animation: "slideDown" }}
+              enter={{ animation: "transition.slideDownIn" }}
               leave={{ animation: "slideUp" }}
             >
               {this.state.lnVisible ? <LnDropdown /> : null}
@@ -133,7 +133,7 @@ class Locations extends Component {
               />
             </VelocityComponent>
             <VelocityTransitionGroup
-              enter={{ animation: "slideDown" }}
+              enter={{ animation: "transition.slideDownBigIn" }}
               leave={{ animation: "slideUp" }}
             >
               {this.state.prVisible ? <Social /> : null}
@@ -148,7 +148,7 @@ class Locations extends Component {
             <h4 className="location-container__hours">Open 10am-6pm</h4>
             <hr className="location-container__hr" />
             <VelocityTransitionGroup
-              enter={{ animation: "slideDown" }}
+              enter={{ animation: "transition.slideDownIn" }}
               leave={{ animation: "slideUp" }}
             >
               {this.state.prVisible ? <PrDropdown /> : null}
