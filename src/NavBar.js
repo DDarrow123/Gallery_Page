@@ -36,7 +36,7 @@ class NavBar extends Component {
             {close => <BurgerMenu close={close} />}
           </Popup>
         </div>
-        <div className="navbar__gallery-name">GALLERY.NYC</div>
+        <div className="navbar__gallery-name">Gallery.ny</div>
         <ul className="navbar__gallery-media">
           <a href="#">
             <li className="list-item">IN</li>
