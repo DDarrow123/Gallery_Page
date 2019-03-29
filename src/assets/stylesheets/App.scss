@@ -9,12 +9,12 @@
 @import "partials/dropdown";
 @import "partials/social";
 @import "partials/socialicons";
+@import "modules/mixins";
 
 html {
   box-sizing: border-box;
 }
-/* inherit border-box on all elements in the universe and before and after
- */
+/* inherit border-box on all elements in the universe and before and after */
 *,
 *:before,
 *:after {
@@ -25,23 +25,18 @@ html {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .App-header {
-  background-color: light grey;
+  background-color: white;
   min-height: 20vh;
   font-size: calc(10px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
-}
+// .App-link {
+//   color: #61dafb;
+// }
 
-.opening {
-  display: flex;
-  flex-direction: row;
-  margin: 4em 0 2em 3em;
-}
+// .opening {
+//   display: flex;
+//   flex-direction: row;
+//   margin: 4em 0 2em 3em;
+// }

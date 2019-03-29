@@ -43,7 +43,7 @@ const BurgerMenu = ({ close, ...props }) => {
       <ul>
         <li onClick={renderElements}>Home</li>
         <li onClick={renderLocationElements}>Locations</li>
-        <li onClick={renderCollectionElements}>Current Collection</li>
+        <li onClick={renderCollectionElements}>Exhibitions</li>
       </ul>
     </div>
   );
