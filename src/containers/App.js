@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
-import "./assets/stylesheets/App.scss";
+import "../assets/stylesheets/App.scss";
 import {
   BrowserRouter as Router,
   Route,
   withRouter,
   Switch
 } from "react-router-dom";
-import Welcome from "./Welcome";
-import MiddleSection from "./MiddleSection";
+import Welcome from "../components/Welcome";
+import MiddleSection from "../components/MiddleSection";
 import NavBar from "./NavBar";
 import Collection from "./Collection";
 import Locations from "./Locations";

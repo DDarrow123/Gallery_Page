@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { VelocityComponent, VelocityTransitionGroup } from "velocity-react";
-import SocialMediaIcons from "./SocialMediaIcons";
-import social_btn from "./assets/images/social_btn.svg";
+import SocialMediaIcons from "../components/SocialMediaIcons";
+import social_btn from "../assets/images/social_btn.svg";
 
 class Social extends Component {
   state = {

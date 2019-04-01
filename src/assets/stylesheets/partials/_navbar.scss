@@ -4,7 +4,7 @@
 .navbar {
   //another place for a mixin
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
   align-items: center;
   &__gallery-name {
     font-family: "Overpass", sans-serif;

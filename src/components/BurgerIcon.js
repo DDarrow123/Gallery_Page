@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
-//-- modifiers do alter apprearance of html elements & __ elements don't alter appearance
+//Sass note: -- modifiers do alter apprearance of html elements & __ elements don't alter appearance
 
 const BurgerIcon = ({ open, ...props }) => {
   return (

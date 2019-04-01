@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { VelocityTransitionGroup } from "velocity-animate";
-import clock_icon from "./assets/images/clock_icon.svg";
-import phone_icon from "./assets/images/phone_icon.svg";
-import mail_icon from "./assets/images/mail_icon.svg";
-import london_gallery from "./assets/images/london_gallery.jpg";
+import clock_icon from "../assets/images/clock_icon.svg";
+import phone_icon from "../assets/images/phone_icon.svg";
+import mail_icon from "../assets/images/mail_icon.svg";
+import ny_gallery from "../assets/images/ny_gallery.jpg";
 
-class LnDropdown extends Component {
+class NyDropdown extends Component {
   render() {
     return (
       <div className="panel">
         <div>
           <img
             className="dropdown-img"
-            src={london_gallery}
+            src={ny_gallery}
             alt="Chelsea New York Image"
           />
         </div>
@@ -58,12 +58,12 @@ class LnDropdown extends Component {
           <h3>Contact</h3>
           <div className="contact-title">
             <img className="phone_icon" src={phone_icon} />
-            <h5>+44 000-000-0000</h5>
+            <h5>+1 000-000-0000</h5>
           </div>
           <hr className="hr-divider" />
           <div className="mail">
             <img className="mail_icon" src={mail_icon} />
-            <h5>london@galleryln.com</h5>
+            <h5>newyork@gallerynyc.com</h5>
           </div>
         </div>
       </div>
@@ -71,4 +71,4 @@ class LnDropdown extends Component {
   }
 }
 
-export default LnDropdown;
+export default NyDropdown;

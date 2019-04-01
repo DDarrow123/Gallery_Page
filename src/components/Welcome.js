@@ -5,7 +5,6 @@ import MiddleSection from "./MiddleSection";
 class Welcome extends Component {
   renderCollection = () => {
     this.props.history.push("/collection");
-    // console.log("hello!");
   };
 
   render() {

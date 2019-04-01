@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
-import BurgerMenu from "./BurgerMenu";
+import BurgerIcon from "../components/BurgerIcon";
+import BurgerMenu from "../components/BurgerMenu";
 import {
   Redirect,
   Route,

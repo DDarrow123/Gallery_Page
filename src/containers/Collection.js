@@ -11,10 +11,10 @@ import {
   VelocityTransitionGroup,
   Velocity
 } from "velocity-react";
-import andrew_1 from "./assets/images/andrew_1.png";
-import andrew_2 from "./assets/images/andrew_2.png";
-import andrew_3 from "./assets/images/andrew_3.png";
-import andrew_4 from "./assets/images/andrew_4.png";
+import andrew_1 from "../assets/images/andrew_1.png";
+import andrew_2 from "../assets/images/andrew_2.png";
+import andrew_3 from "../assets/images/andrew_3.png";
+import andrew_4 from "../assets/images/andrew_4.png";
 
 class Collection extends Component {
   state = {

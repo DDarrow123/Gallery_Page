@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 const BurgerMenu = ({ close, ...props }) => {
-  console.log(close);
+  // console.log(close);
 
   const renderWelcome = () => {
     props.history.push("/");

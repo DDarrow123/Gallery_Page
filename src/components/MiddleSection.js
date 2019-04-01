@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import art_image from "./assets/images/art_image.jpg";
-import next_arrow from "./assets/images/next_arrow.svg";
+import art_image from "../assets/images/art_image.jpg";
+import next_arrow from "../assets/images/next_arrow.svg";
 
 class MiddleSection extends Component {
   renderCollection = () => {

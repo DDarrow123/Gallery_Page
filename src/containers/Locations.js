@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 // import { TransitionGroup } from "react-transition-group";
 import { VelocityComponent, VelocityTransitionGroup } from "velocity-react";
-import plus_arrow_icon from "./assets/images/plus_arrow_icon.svg";
-import NyDropdown from "./NyDropdown";
-import LnDropdown from "./LnDropdown";
-import PrDropdown from "./PrDropdown";
+import plus_arrow_icon from "../assets/images/plus_arrow_icon.svg";
+import NyDropdown from "../components/NyDropdown";
+import LnDropdown from "../components/LnDropdown";
+import PrDropdown from "../components/PrDropdown";
 import Social from "./Social";
 
 class Locations extends Component {
