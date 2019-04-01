@@ -1,14 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 @import url("https://fonts.googleapis.com/css?family=Overpass:300");
+@import "modules/variables";
 
 .middle-section {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  .middle-title {
-    // width: 20%;
-    &__show {
-      font-family: "Overpass", sans-serif;
+  &__title {
+    .exihibit-name {
+      font-family: $overpass;
       font-size: 8vw;
       position: absolute;
       left: 5%;
@@ -20,22 +19,22 @@
         font-weight: 500;
       }
     }
-    &__link {
-      margin: 18em 0 0 1em;
-      font-family: "Overpass", sans-serif;
-      font-size: 2vw;
-      .arrow-color {
-        width: 6vw;
-        top: 30em;
-        left: 10em;
-        position: absolute;
-        &:hover {
-          filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
-        }
+  }
+  &__exhibit-link {
+    margin: 18em 0 0 1em;
+    font-family: $overpass;
+    font-size: 2vw;
+    .arrow-color {
+      width: 6vw;
+      top: 30em;
+      left: 10em;
+      position: absolute;
+      &:hover {
+        filter: brightness(0.5) sepia(2) hue-rotate(180deg) saturate(5);
       }
     }
   }
-  .middle-image {
+  &__middle-image {
     img {
       width: 48vw;
       height: 150vh;
@@ -43,22 +42,23 @@
       margin-left: 15vw;
     }
   }
-  .middle-description {
+  &__middle-description {
     text-align: left;
     margin: 0 3em 0 3em;
-    &__heading {
-      font-family: "Roboto", sans-serif;
+    .heading {
+      font-family: $roboto;
       font-weight: 700;
       font-size: 1.5vw;
     }
-    &__subheading {
-      font-family: "Overpass", sans-serif;
+    .subheading {
+      font-family: $overpass;
       font-weight: 300;
       font-size: 2vw;
     }
   }
 }
 .opening {
-  font-family: "Overpass", sans-serif;
+  font-family: $overpass;
   font-size: 2vw;
+  margin: 3em 25em 3em 0;
 }

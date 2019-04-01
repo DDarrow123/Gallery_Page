@@ -14,12 +14,12 @@ class MiddleSection extends Component {
     return (
       <>
         <div className="middle-section">
-          <div className="middle-title">
-            <h1 className="middle-title__show">
+          <div className="middle-section__title">
+            <h1 className="exihibit-name">
               Abstract <br /> <span>Direction</span>
             </h1>
           </div>
-          <div className="middle-title__link">
+          <div className="middle-section__exhibit-link">
             ENTER COLLECTION
             <img
               className="arrow-color"
@@ -27,16 +27,16 @@ class MiddleSection extends Component {
               onClick={this.renderCollection}
             />
           </div>
-          <div className="middle-image">
+          <div className="middle-section__middle-image">
             <img src={art_image} />
           </div>
-          <div className="middle-description">
-            <h5 className="middle-description__heading">YEAR</h5>
-            <h5 className="middle-description__subheading">2019</h5>
-            <h5 className="middle-description__heading">COLLECTION</h5>
-            <h5 className="middle-description__subheading">15 PIECES</h5>
-            <h5 className="middle-description__heading">ARTIST</h5>
-            <h5 className="middle-description__subheading">ANDREW HOLMQUIST</h5>
+          <div className="middle-section__middle-description">
+            <h5 className="heading">YEAR</h5>
+            <h5 className="subheading">2019</h5>
+            <h5 className="heading">COLLECTION</h5>
+            <h5 className="subheading">15 PIECES</h5>
+            <h5 className="heading">ARTIST</h5>
+            <h5 className="subheading">ANDREW HOLMQUIST</h5>
           </div>
         </div>
         <footer>

@@ -26,4 +26,27 @@
   }
 }
 
-////Media Queries////
+@mixin work-details() {
+  position: absolute;
+  top: 8em;
+  left: 4.1em;
+  color: white;
+  font-size: 40px;
+}
+
+@mixin gradient-fill() {
+  height: 5em;
+  background: linear-gradient(
+    to right,
+    rgba(223, 223, 223, 0.5) 50%,
+    rgba(159, 159, 159, 0.3) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all ease 0.5s;
+}
+
+@mixin work-divider-details() {
+  border: 1px solid white;
+  margin-bottom: 0;
+}

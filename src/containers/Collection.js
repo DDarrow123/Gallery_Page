@@ -68,7 +68,6 @@ class Collection extends Component {
                 <img src={andrew_1} alt="Andrew Work - Aphotic Zone Image" />
               ) : null}
             </VelocityTransitionGroup>
-
             <div className="work-description">
               <hr className="work-divider" />
               <div className="filler">
